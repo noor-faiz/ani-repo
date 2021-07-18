@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid cornflowerblue;
+            height: 500px;
+            margin-top: 100px;
+        }
+        .box img{
+            width: 150px;
+            height: 250px;
+        }
+        .ball img{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 240px;
+            top: 70px;
+        }
+        .ball{
+            transition: transform 1.2s ease-in 2s;
+        }
+        .bat{
+            position: relative;
+            top: 250px;
+            transition: transform 2s ease-in 0s;
+        }
+        .box:hover>.bat{
+            transform:rotate(-60deg);
+            transform-origin: top left;
+        }
+        .box:hover>.ball{
+            transform: translateX(300px) translateY(-100px);
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="bat"><img src="bat.png"> </div>
+        <div class="ball"><img src="https://img.favpng.com/23/5/5/cricket-balls-bat-and-ball-games-test-cricket-png-favpng-BuvBH3hXrVYpfc4ap6Uc762D7_t.jpg">
+        </div>
+    </div>    
+    
+</body>
+</html>
